@@ -2,25 +2,29 @@ import React from "react";
 import Carrito from "../cartWidjet/Carrito";
 import "./NavBar.css";
 import image from "../../resources/icon.png";
+import { NavLink } from "react-router-dom";
 
 const NavBar = () => {
   return (
     <nav className="navegacion">
       <div className="navegacion__div">
-        <img src={image} alt="" className="logito" />
+        <NavLink to={"home"}>
+          <img src={image} alt="" className="logito" />
+        </NavLink>
         <ul className="navegacion__div__contenedor">
           <li>
-            <a href="/accion">accion</a>
+            <NavLink to={"accion"}>accion</NavLink>
           </li>
           <li>
-            <a href="/rpg">rpg</a>
+            <NavLink to={"rpg"}>rpg</NavLink>
           </li>
           <li>
-            <a href="/carreras">carrera</a>
+            <NavLink to={"carreras"}>carreras</NavLink>
           </li>
           <li>
-            <a href="/deportes">deportes</a>
+            <NavLink to={"deportes"}>deportes</NavLink>
           </li>
+
           <Carrito></Carrito>
         </ul>
       </div>

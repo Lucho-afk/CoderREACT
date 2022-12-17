@@ -13,7 +13,8 @@ const ItemListContainer = (props) => {
 
   return (
     <div className="vacaPolaca">
-      <h1 onClick={_handleClick}>{mensaje}</h1>
+      <h1>No se que poner como mi pagina de inicio</h1>
+      <h2 onClick={_handleClick}>vaca polaca</h2>
       {state && <img src={vaca}></img>}
     </div>
   );
